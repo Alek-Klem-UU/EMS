@@ -10,6 +10,7 @@ median_val <- median(scores)
 # which returns the most occuring number in an array
 # a.k.a. the modus
 get_mode <- function(v) {
+  # Gets each unique value in the array
   uniqv <- unique(v)
   uniqv[which.max(tabulate(match(v, uniqv)))]
 }
